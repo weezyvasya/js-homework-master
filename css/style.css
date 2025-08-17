@@ -1,0 +1,542 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fafafa;
+}
+
+/* Шапка */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  border-bottom: 1px solid rgb(238, 238, 238);
+  background-color:rgba(255, 255, 255, 1);
+  box-sizing: border-box;
+}
+
+.header-left img {
+  height: 40px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-right img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.header-text {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Основной контейнер */
+.container {
+  width: 1030px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Блок ближайшего мероприятия */
+.frontend-school {
+  background-image: url('../img/Group1.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: rgba(207, 241, 233, 1);
+  border-radius: 20px;
+  overflow: hidden;
+  height: 300px;
+  max-width: 1030px;
+  margin: 40px auto 30px auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.frontend-school-main {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.frontend-school-main h3 {
+  margin: 0;
+  font-size: 14px;
+  color: rgba(43, 45, 51, 1);
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.frontend-school-main h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  color:rgba(43, 45, 51, 1);
+}
+
+.date-location {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgba(43, 45, 51, 1);
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.signup-button {
+  padding: 10px 20px;
+  background-color: rgba(43, 45, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 605000;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+.signup-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Блок всех мероприятий */
+.all-events {
+  padding: 20px 0 40px;
+}
+
+.all-events-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.all-events-main-title h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.all-events-choice {
+  display: flex;
+  gap: 10px;
+  padding-bottom: 10px;
+}
+
+.all-events-choice button {
+  padding: 6px 12px;
+  background-color: rgba(244, 244, 244, 1);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+  font-size: 13px;
+  color: rgba(43, 45, 51, 1);
+}
+.all-events-choice button:first-child {
+  background-color: rgba(43, 45, 51, 1); 
+  color: rgba(255, 255, 255, 1);
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+/* Таблица мероприятий */
+.all-events-it {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.events-table td {
+  padding: 16px;
+  vertical-align: top;
+  border: none;
+}
+/* 
+.events-table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #f0f0f0;
+} */
+
+/* .events-table tbody tr:hover {
+  background-color: #fafafa;
+} */
+
+.date-column {
+  width: 100px;
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+}
+
+.event-column {
+  width: 50%;
+}
+
+.event-title {
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: rgb(51, 51, 51);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.event-description {
+  color: rgb(102, 102, 102);
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.number-column {
+  width: 60px;
+}
+
+.number-with-heart {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.heart-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.participants-column {
+  width: 20%;
+}
+
+.participant-name {
+  margin-bottom: 3px;
+  font-size: 13px;
+  color: rgb(85, 85, 85);
+}
+
+.registration-column {
+  width: 150px;
+  text-align: center;
+}
+
+.registration-button {
+  padding: 8px 12px;
+  color: rgba(43, 45, 51, 1);
+  border: 2px solid rgba(213, 213, 214, 1) ;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.registration-button:disabled {
+  background-color: rgb(204, 204, 204);
+  cursor: not-allowed;
+}
+
+
+/* .registration-status {
+  color: #999;
+  font-size: 11px;
+  margin-top: 4px;
+} */
+
+/* Адаптивность */
+@media (max-width: 1080px) {
+  .container {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .all-events-it {
+    overflow-x: auto;
+  }
+  
+  .events-table {
+    min-width: 1030px;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-header {
+    padding: 0 15px;
+  }
+  
+  .frontend-school {
+    height: 250px;
+    padding: 30px 0;
+  }
+  
+  .frontend-school-main {
+    max-width: 100%;
+  }
+  
+  .all-events-choice {
+    flex-wrap: wrap;
+  }
+}
+
+.event-registration {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(255, 255, 255, 1); 
+    z-index: 100; 
+}
+
+.event-title-modal {
+    color: rgba(43, 45, 51, 1);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(238, 238, 238);
+    padding-bottom: 10px;
+}
+
+.event-subtitle {
+    color: rgba(128, 129, 133, 1);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.event-info {
+    background-color: rgba(244, 244, 244, 1);
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+
+.event-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: rgba(43, 45, 51, 1);
+    margin-bottom: 5px;
+}
+
+.event-age {
+    color: rgba(170, 171, 173, 1);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+.event-format {
+    margin-bottom: 20px;
+}
+
+.event-format {
+  display: flex;
+  justify-content: flex-start;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.format-option {
+  padding: 10px 15px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 20px;
+  background-color: rgba(244, 244, 244, 1);
+  color: rgba(43, 45, 51, 1);
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.format-option:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.format-option.active {
+  background-color: rgba(43, 45, 51, 1);
+  color: rgba(255, 255, 255, 1);
+  border-color: rgb(153, 153, 153);
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.attendee-field,
+.comment-field {
+    margin: 20px;
+}
+
+.field-label {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(128, 129, 133, 1);
+    margin-bottom: 5px;
+}
+
+.text-input,
+.text-area {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 4px;
+}
+
+.text-area {
+    min-height: 80px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px
+}
+
+.register-btn {
+    background-color: rgba(254, 230, 0, 1);
+    color: rgba(43, 45, 51, 1);
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cancel-btn {
+    background-color: white;
+    color: rgba(43, 45, 51, 1);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Адаптация для экранов до 800px */
+@media (max-width: 800px) {
+  .event-registration {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .event-title-modal {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .event-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .event-info {
+    padding: 12px;
+    margin-bottom: 20px;
+  }
+
+  .event-name {
+    font-size: 14px;
+  }
+
+  .event-age {
+    font-size: 11px;
+  }
+
+  .format-option {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+
+  .attendee-field,
+  .comment-field {
+    margin: 15px 0;
+  }
+
+  .text-input,
+  .text-area {
+    padding: 7px;
+  }
+
+  .action-buttons {
+    gap: 10px;
+  }
+
+  .register-btn,
+  .cancel-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+/* Адаптация для экранов до 480px */
+@media (max-width: 480px) {
+  .event-registration {
+    max-width: 95%;
+    padding: 12px;
+    display: none;
+  }
+
+  .event-title-modal {
+    font-size: 18px;
+    padding-bottom: 8px;
+  }
+
+  .event-format {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .format-option {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .text-area {
+    min-height: 60px;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .register-btn,
+  .cancel-btn {
+    width: 100%;
+    padding: 10px;
+  }
+}

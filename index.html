@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paipdaiaen</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <img src="./img/Logotype.png" alt="logo" />
+      </div>
+      <div class="header-right">
+        <p class="header-text">Валентин Костин</p>
+        <img src="./img/S.png" alt="Валентин Костин" />
+        <img src="./img/Exit.svg" alt="выход" />
+      </div>
+    </header>
+    <main>
+      <section class="frontend-school">
+        <div class="frontend-school-main">
+          <h3>Ближайшее мероприятие</h3>
+          <h1>Школа по фронтенду</h1>
+          <div class="date-location">
+            25.05.2020<span>Офис в Нагатино</span>
+          </div>
+          <button class="signup-button">Записаться на курс</button>
+        </div>
+      </section>
+      <section class="all-events">
+        <div class="container">
+          <div class="all-events-main">
+            <div class="all-events-main-title">
+              <h2>Все мероприятия</h2>
+            </div>
+            <nav class="all-events-choice">
+              <button class="all-events-choice_selected">IT Academy</button>
+              <button>Маркетинг</button>
+              <button>Retail</button>
+              <button>Остальные</button>
+            </nav>
+            <div class="all-events-it">
+              <table class="events-table">
+                <tbody class="table-root"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="event-registration">
+        <div class="close-btn">
+          &#x2716;
+        </div>
+      <h1 class="event-title-modal">Запись на мероприятие</h1>
+
+      <p class="event-subtitle">Выберите необходимые параметры мероприятия</p>
+
+      <div class="event-info">
+        <p class="event-name">
+          Веницианский карнавал танцев и богохульных плясок: смотрим вместе
+        </p>
+        <p class="event-age">К посещению приглашаются сотрудники 18+</p>
+      </div>
+
+      <div class="event-format">
+        <button class="format-option active">Онлайн</button>
+        <button class="format-option">Оффлайн: офис Нагатино</button>
+      </div>
+      <div class="attendee-field">
+        <p class="field-label">Кто пойдет на мероприятие</p>
+        <input
+          type="text"
+          class="text-input"
+          placeholder="Логин или имя сотрудника"
+        />
+      </div>
+      <div class="comment-field">
+        <p class="field-label">Комментарий</p>
+        <textarea
+          class="text-area"
+          placeholder="Дополнительная информация"
+        ></textarea>
+      </div>
+      <div class="action-buttons">
+        <button class="register-btn">Зарегистрироваться</button>
+        <button class="cancel-btn">Отменить</button>
+      </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
