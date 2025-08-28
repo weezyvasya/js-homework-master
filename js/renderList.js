@@ -1,4 +1,5 @@
 import { popUpOpen } from "./popUp.js";
+import { updateListner } from "./mock.js";
 let rootElement = document.querySelector('.table-root')
 
 
@@ -37,7 +38,7 @@ function renderList(data) {
                   </tr>`
  )
 
- document.querySelectorAll('.registration-button').forEach((btn) => btn.addEventListener('click',popUpOpen) )
+updateListner(popUpOpen)
 
 }
 

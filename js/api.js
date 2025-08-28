@@ -1,7 +1,7 @@
 class Api {
   async get(url, options = {}, callback) {
      try {
-       const res =  await fetch(url, options)
+       const res = await fetch(url, options)
 
        if (!res.ok) {
         throw new Error('Что то не так с запросом!')
@@ -15,7 +15,7 @@ class Api {
       
        
      } catch (e) {
-        console.log(e)
+        console.error(e.massage)
      }
     
  }
@@ -31,10 +31,8 @@ class Api {
       
        
      } catch (e) {
-        console.log(e)
-     } finally {
-         console.log('finally')
-     }
+        console.error(e.massage)
+     } 
   }
   
   async delete(url, options = {}) {
@@ -48,10 +46,8 @@ class Api {
       return data;
 
     } catch (e) {
-      console.log(e);
-    } finally {
-      console.log('finally');
-    }
+      console.error(e.massage)
+    } 
   }
 
   async put(url, options = {}) {
@@ -65,10 +61,9 @@ class Api {
       return data;
 
     } catch (e) {
-      console.log(e);
-    } finally {
-      console.log('finally');
-    }
+      console.error(e.massage)
+      
+    } 
   }
 }
 export default  Api 

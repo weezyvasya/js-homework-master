@@ -4,6 +4,8 @@
   "description": "demo project",
   "main": "index.html",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack serve --open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint": "eslint ./"
   },
@@ -14,13 +16,14 @@
     "express": "^4.17.1",
     "http-errors": "^1.8.0",
     "morgan": "^1.10.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "prettier": "^3.6.2"
   },
   "devDependencies": {
-    "eslint": "7.13.0",
-    "webpack": "4.44.2",
-    "webpack-cli": "3.3.12",
-    "webpack-dev-server": "3.11.0"
+    "eslint": "^7.13.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "eslintConfig": {
     "parser": "babel-eslint",
